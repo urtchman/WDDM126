@@ -230,3 +230,42 @@ header nav a {
     text-decoration: none;
     font-weight: bold;
 }
+
+
+/* Newsletter Signup Section */
+.newsletter {
+    background-color: #333;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.newsletter h2 {
+    margin-bottom: 15px;
+}
+
+.newsletter p {
+    margin-bottom: 20px;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.newsletter input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #ff6f61;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
