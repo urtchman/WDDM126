@@ -3,10 +3,13 @@ function exploreMore() {
 }
 
 document.addEventListener("DOMContentLoaded", () => { 
+    const hamburger = document.getElementById("hamburger");
     const navbar = document.getElementById("navbar");
- 
 
-    const navLinks = document.querySelectorAll('#navbar a');
+    hamburger.addEventListener("click", () => {
+        navbar.classList.toggle("nav-active");
+    });
+ 
 
     // Loop through each link and add event listeners
     navLinks.forEach(link => {
