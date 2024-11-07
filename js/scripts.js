@@ -24,3 +24,9 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+// Function to show and hide the loader modal
+function toggleLoader(show) {
+    const loaderModal = document.getElementById('loaderModal');
+    loaderModal.style.display = show ? 'block' : 'none';
+}
