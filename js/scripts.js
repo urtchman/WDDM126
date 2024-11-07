@@ -43,3 +43,14 @@ function openCityModal() {
 function closeCityModal() {
     document.getElementById('cityModal').style.display = 'none';
 }
+
+function toggleCityRow(cityId, rowId) {
+    const checkbox = document.getElementById(cityId);
+    const row = document.getElementById(rowId);
+
+    if (checkbox.checked) {
+        row.style.display = 'table-row'; // Show the corresponding table row
+    } else {
+        row.style.display = 'none'; // Hide the corresponding table row
+    }
+}
