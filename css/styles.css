@@ -269,3 +269,37 @@ header nav a {
     border-radius: 5px;
     cursor: pointer;
 }
+
+
+/* Footer Section */
+footer {
+    background: #333;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    margin-top: auto;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-content .contact-info address {
+    font-style: normal;
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+.footer-content .social-links a {
+    color: #fff;
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+.footer-content p {
+    flex-basis: 100%;
+    margin-top: 15px;
+}
