@@ -54,3 +54,4 @@ function toggleCityRow(cityId, rowId) {
         row.style.display = 'none'; // Hide the corresponding table row
     }
 }
+
