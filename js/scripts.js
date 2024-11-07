@@ -30,3 +30,8 @@ function toggleLoader(show) {
     const loaderModal = document.getElementById('loaderModal');
     loaderModal.style.display = show ? 'block' : 'none';
 }
+
+// Explore Button Action
+function exploreCities() {
+    alert('Explore your selected cities!\nThis is just a demo');
+}
