@@ -113,3 +113,31 @@ header nav a {
   padding: 20px;
   cursor: pointer;
 }
+
+.popular-destinations {
+  padding: 20px;
+}
+
+.popular-destinations h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.destination-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.destination {
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
