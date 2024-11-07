@@ -373,3 +373,60 @@ footer {
 .services li strong {
     color: #ff6f61;
 }
+
+/* Team Section */
+.team {
+    background-color: #333;
+    color: white;
+    padding: 40px 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.team h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.team p {
+    font-size: 1.1em;
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+/* Team Grid Layout */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.team-member {
+    background-color: #444;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+}
+
+.team-member h3 {
+    color: #ff6f61;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.team-member p {
+    color: #bbb;
+    font-size: 1em;
+}
