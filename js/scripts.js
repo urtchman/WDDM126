@@ -35,3 +35,11 @@ function toggleLoader(show) {
 function exploreCities() {
     alert('Explore your selected cities!\nThis is just a demo');
 }
+
+function openCityModal() {
+    document.getElementById('cityModal').style.display = 'block';
+}
+
+function closeCityModal() {
+    document.getElementById('cityModal').style.display = 'none';
+}
