@@ -430,3 +430,83 @@ footer {
     color: #bbb;
     font-size: 1em;
 }
+
+/* This adjusts the layout and hover effects for the destination sections */
+.destination2:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.destination2 h2 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.destination2 p {
+    font-size: 1em;
+}
+.destination2 {
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    border-radius: 8px;
+    transition: transform 0.3s, opacity 0.3s;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+
+/* Travel Guide Section */
+.travel-guide {
+    padding: 40px;
+    background-color: #f4f8fb;
+    color: #333;
+    line-height: 1.6; 
+    margin: 0 auto;
+}
+
+.travel-guide h2 {
+    font-size: 2.2em;
+    color: #2b6cb0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.travel-guide p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.travel-guide h3 {
+    font-size: 1.6em;
+    color: #ff6b6b;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-left: 4px solid #2b6cb0;
+    padding-left: 10px;
+}
+
+.travel-guide ul {
+    list-style: disc inside;
+    padding-left: 20px;
+    margin: 0 0 20px 0;
+}
+
+.travel-guide ul li {
+    font-size: 1.05em;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.travel-guide ul li strong {
+    color: #333;
+    font-weight: bold;
+}
