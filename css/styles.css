@@ -24,6 +24,21 @@ header {
   animation: glow 1.5s infinite alternate; /* Glowing animation */
 }
 
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+    z-index: 20000;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+}
+
 @keyframes glow {
   0% {
       box-shadow: 0 0 20px rgba(255, 111, 97, 0.7), 0 0 40px rgba(243, 166, 131, 0.7);
@@ -58,7 +73,9 @@ header nav a {
   header nav {
       display: none; /* Hide navigation links */
   }
-
+  .hamburger {
+        display: flex; /* Show hamburger icon */
+    }
   #navbar { 
       z-index: 20000;
   }
