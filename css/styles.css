@@ -196,3 +196,37 @@ header nav a {
   font-weight: bold;
   margin-top: 10px;
 }
+
+/* Featured Article Section */
+.featured-article {
+    padding: 30px;
+    text-align: center;
+    background: #ff6f61;
+    color: white;
+}
+
+.featured-article h2 {
+    margin-bottom: 20px;
+}
+
+.featured-article article {
+    background: #fff;
+    color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.featured-article h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.featured-article .read-more {
+    display: inline-block;
+    margin-top: 15px;
+    color: #ff6f61;
+    text-decoration: none;
+    font-weight: bold;
+}
