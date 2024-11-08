@@ -562,3 +562,54 @@ footer {
     font-size: 24px;
     cursor: pointer;
 }
+
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.city-list {
+    width: 45%;
+}
+.city-list label {
+    display: block;
+    margin-bottom: 10px;
+}
+.selected-cities {
+    width: 45%;
+}
+
+.selected-cities table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.selected-cities th, .selected-cities td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.selected-cities th {
+    background-color: #f4f4f4;
+}
+
+.city-row {
+    display: none; /* Initially hide all rows */
+}
+/* Explore Button */
+.explore-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.explore-btn:hover {
+    background-color: #45a049;
+}
