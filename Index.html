@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UMK Travels</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="assets/images/svg/logo.svg">    
+</head>
+<body>
+  
+    <!-- Main Section -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <video autoplay muted loop>
+                <source src="assets/videos/sydney.mp4" type="video/mp4">
+            </video>
+            <div class="hero-text" onclick="openCityModal()">
+                <h1>Explore the World with Us!</h1>
+                <p>Your dream vacation is just a click away.</p>
+            </div>
+
+            <!-- Modal Structure -->
+            <div id="cityModal" class="modal">
+                <div class="modal-content2">
+                    <div class="city-list">
+                        <h3>Select Cities</h3>
+                        <div class="cities">
+                            <label><input type="checkbox" id="paris" /> Paris, France</label>
+                            <label><input type="checkbox" id="tokyo" /> Tokyo, Japan</label>
+                            <label><input type="checkbox" id="newYork" /> New York, USA</label>
+                            <label><input type="checkbox" id="sydney" /> Sydney, Australia</label>
+                            <label><input type="checkbox" id="capeTown" /> Cape Town, South Africa</label>
+                            <label><input type="checkbox" id="dubai" /> Dubai, UAE</label>
+                            <label><input type="checkbox" id="london" /> London, UK</label>
+                            <label><input type="checkbox" id="rome" /> Rome, Italy</label>
+                            <label><input type="checkbox" id="istanbul" /> Istanbul, Turkey</label>
+                            <label><input type="checkbox" id="toronto" /> Toronto, Canada</label>
+                            <label><input type="checkbox" id="lagos" /> Lagos, Nigeria</label>
+                            <label><input type="checkbox" id="saoPaulo" /> Sao Paulo, Brazil</label>
+                        </div>
+                    </div>
+                    <div class="selected-cities">
+                        <h3>Selected Cities</h3>
+                        <table id="selectedCitiesTable">
+                            <thead>
+                                <tr>
+                                    <th>City</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr id="parisRow" class="city-row"><td>Paris, France</td></tr>
+                                <tr id="tokyoRow" class="city-row"><td>Tokyo, Japan</td></tr>
+                                <tr id="newYorkRow" class="city-row"><td>New York, USA</td></tr>
+                                <tr id="sydneyRow" class="city-row"><td>Sydney, Australia</td></tr>
+                                <tr id="capeTownRow" class="city-row"><td>Cape Town, South Africa</td></tr>
+                                <tr id="dubaiRow" class="city-row"><td>Dubai, UAE</td></tr>
+                                <tr id="londonRow" class="city-row"><td>London, UK</td></tr>
+                                <tr id="romeRow" class="city-row"><td>Rome, Italy</td></tr>
+                                <tr id="istanbulRow" class="city-row"><td>Istanbul, Turkey</td></tr>
+                                <tr id="torontoRow" class="city-row"><td>Toronto, Canada</td></tr>
+                                <tr id="lagosRow" class="city-row"><td>Lagos, Nigeria</td></tr>
+                                <tr id="saoPauloRow" class="city-row"><td>Sao Paulo, Brazil</td></tr>
+                            </tbody>
+                        </table>
+                        <button class="explore-btn" onclick="exploreCities()">Explore</button>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- Popular Destinations -->
+        <section class="popular-destinations">
+            <h2>Popular Destinations</h2>
+            <div class="destination-grid">
+                <div class="destination" title="Known for its iconic Eiffel Tower, art museums, and café culture, Paris offers a romantic atmosphere with a rich history." style="background-image: url('assets/images/paris.jpg');">Paris</div>
+                <div class="destination" title="A dazzling mix of tradition and futurism, Tokyo captivates with its shrines, tech, anime culture, and vibrant food scene." style="background-image: url('assets/images/tokyo.jpg');">Tokyo</div>
+                <div class="destination" title="From Broadway to Times Square, New York offers a nonstop energy with endless entertainment, dining, and shopping options." style="background-image: url('assets/images/new-york.jpg');">New York</div>
+                <div class="destination" title="Famous for its Opera House, Sydney combines coastal beauty, wildlife, and a vibrant nightlife in the Land Down Under." style="background-image: url('assets/images/sydney.jpg');">Sydney</div>
+            </div>
+
+            <!-- Modal Structure -->
+            <div id="destinationModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p id="destinationDescription"></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <h2>What Our Clients Say</h2>
+            <article class="testimonial">
+                <blockquote>"Best travel experience ever! Everything was perfectly organized."</blockquote>
+                <p>- Jane Doe</p>
+            </article>
+            <article class="testimonial">
+                <blockquote>"A memorable trip that we will cherish forever. Thank you, TravelAgent!"</blockquote>
+                <p>- John Smith</p>
+            </article>
+        </section>
+
+        <!-- Featured Article Section -->
+        <section class="featured-article">
+            <h2>Travel Tips & Articles</h2>
+            <article>
+                <h3>5 Tips for First-Time Travelers</h3>
+                <p>Discover essential tips for making the most out of your first travel experience.</p>
+                <a href="articles/tips.html" class="read-more">Read More</a>
+            </article>
+        </section>
+
+        <!-- Newsletter Signup Section -->
+        <section class="newsletter">
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>Get the latest travel news and offers directly to your inbox.</p>
+            <form action="#" method="post">
+                <input type="email" name="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <address>
+                    123 Travel Street, City, Country<br>
+                    Phone: (123) 456-7890<br>
+                    Email: info@umktravels.com
+                </address>
+            </div>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+            <p>&copy; 2024 TravelAgent. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script>const pageId = 1;</script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
